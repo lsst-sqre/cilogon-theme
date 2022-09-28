@@ -77,6 +77,15 @@ div.logoheader {
   background-repeat: no-repeat;
 }
 
+div.logoheader h1 {
+  background: transparent;
+}
+
+div.skincilogonlogo {
+  display: inline;
+  margin: 8px;
+}
+
 .footer {
   border: none;
   border-top: 1px solid var(--rubin-color-primary);
