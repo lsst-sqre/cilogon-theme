@@ -60,12 +60,14 @@ body {
 a,
 a:link,
 a:visited,
-.footer a:link {
+.footer a:link,
+.footer a:visited {
   color: var(--rubin-color-link-text);
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.footer a:hover {
   text-decoration: underline;
 }
 
