@@ -119,7 +119,9 @@ div.skincilogonlogo {
   background-color: var(--rubin-color-primary);
   border: 1px solid var(--rubin-color-primary);
   border-radius: 6px;
-  padding: 0.8em 2em;
+  /* Extra top/bottom margin in case a button row wraps. */
+  margin-top: var(--rubin-space-xs);
+  margin-bottom: var(--rubin-space-xs);
 }
 
 .btn.btn-primary:hover {
