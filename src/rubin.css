@@ -1,6 +1,7 @@
 :root {
   --rsd-color-blue-500: #1c81a4;
   --rsd-color-blue-300: #48afd2;
+  --rsd-color-gray-050: #f3f5f7;
   --rsd-color-gray-100: #dce0e3;
   --rsd-color-gray-500: #6a6e6e;
   --rsd-color-gray-800: #1f2121;
@@ -22,6 +23,8 @@
   --rsd-color-primary-800: #313333;
 
   --rubin-color-background: var(--rsd-color-gray-000);
+  --rubin-color-table-alt-background: var(--rsd-color-gray-050);
+  --rubin-color-table-separator: var(--rsd-color-gray-100);
   --rubin-color-background-header: var(--rsd-color-gray-900);
   --rubin-color-card-header-background: var(--rsd-color-gray-000);
   --rubin-color-popover-background: var(--rsd-color-gray-000);
@@ -40,6 +43,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --rubin-color-background: var(--rsd-color-gray-900);
+    --rubin-color-table-alt-background: var(--rsd-color-gray-800);
+    --rubin-color-table-separator: var(--rsd-color-primary-700);
     --rubin-color-background-header: var(--rsd-color-gray-800);
     --rubin-color-card-header-background: var(--rsd-color-gray-800);
     --rubin-color-popover-background: var(--rsd-color-gray-800);
@@ -112,6 +117,30 @@ div.skincilogonlogo {
 
 .card h4 {
   color: var(--rubin-color-header-text);
+}
+
+.table {
+  color: var(--rubin-color-main-text);
+}
+
+.table-striped tbody tr:nth-of-type(2n + 1) {
+  background-color: var(--rubin-color-table-alt-background);
+}
+
+.table-striped tbody tr:nth-of-type(2n + 1):hover {
+  /* reset hover effects */
+  background-color: var(--rubin-color-table-alt-background);
+}
+
+.table td,
+.table th {
+  border-top: 1px solid var(--rubin-color-table-separator);
+}
+
+.table-hover tbody tr:hover {
+  /* reset hover effects */
+  color: inherit;
+  background-color: inherit;
 }
 
 .btn.btn-primary {
