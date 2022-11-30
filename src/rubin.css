@@ -189,3 +189,16 @@ div.skincilogonlogo {
   background-color: var(--rubin-color-popover-background);
   border-bottom: 1px solid var(--rubin-color-primary);
 }
+
+/*
+ * Hide the "Remember this selection" checkbox on the login page. We don't
+ * want users to enable this because it would prevent them from changing
+ * identity providers in the future.
+ *
+ * This is a very blunt selector, but because of the use of bootstrap and a
+ * lack of semantic classes I'm not sure of a better approach here. I don't
+ * think this matches any other checkboxes on other pages.
+ */
+div.form-check {
+  display: none;
+}
