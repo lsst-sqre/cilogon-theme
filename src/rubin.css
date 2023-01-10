@@ -202,3 +202,10 @@ div.skincilogonlogo {
 div.form-check {
   display: none;
 }
+
+/*
+ * Hide the "Powered by CILogon" icon/link in the upper-right corner.
+ */
+div.skincilogonlogo {
+  display: none;
+}
